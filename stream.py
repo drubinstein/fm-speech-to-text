@@ -32,8 +32,5 @@ async def streaming(sample_processor: Callable[[SampleStream, RtlSdr], None],
 def printer(samples: SampleStream, sdr: RtlSdr) -> None:
     print(samples)
 
-
-
-
 loop = asyncio.get_event_loop()
 loop.run_until_complete(streaming(fmdemod.demod))

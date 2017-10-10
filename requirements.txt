@@ -2,3 +2,4 @@ pyrtlsdr
 scipy
 numpy
 pyaudio
+speech_recognition
